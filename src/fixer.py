@@ -3,13 +3,15 @@ import torch
 import sys
 import numpy as np
 from PIL import Image
-from gfpgan import GFPGANer
 from torchvision.transforms import functional as F
+
 try:
     from torchvision.transforms import functional_tensor
 except ImportError:
     # If the module is missing (newer PyTorch), we create a fake one pointing to the new location
     sys.modules['torchvision.transforms.functional_tensor'] = F
+
+from gfpgan import GFPGANer
 
 class ImageRestorer:
     def __init__(self):
