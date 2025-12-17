@@ -1,0 +1,10 @@
+torch
+torchvision
+basicsr
+facexlib
+gfpgan
+realesrgan
+
+streamlit 
+opencv-python-headless
+pillow
